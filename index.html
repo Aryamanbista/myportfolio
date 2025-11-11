@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Protfilio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/df908adb86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">Aryaman Bista.</div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm <span> Aryaman</span> <br />Bista currently living in Nepal.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------About --------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a passionate and driven Information Technology student based
+               in Kathmandu, Nepal, with a deep curiosity for building impactful solutions. 
+               I'm currently pursuing my BIT (Hons) and am on a journey to master the worlds of AI, web development, and data science. 
+               My goal is to leverage technology to solve real-world problems and contribute to the developer community.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>C/C++</span></li>
+                <li><span>Java</span></li>
+                <li><span>Android studio</span></li>
+                <li><span>Aws</span></li>
+                <li><span>AI</span></li>
+                <li><span>Mysql</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>  2024 – Present</span><br />Secretary, Tech Titans Academic Club</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelors in Information Technology (Hons.), 2023-present</span
+                  ><br />Mid-Valley International College – HELP University
+                </li>
+                <li>
+                  <span>+2 Science, 2020 – 2022 </span><br />
+                  Xavier International College 
+                </li>
+                <li>
+                  <span>SEE - 2020</span> <br />Sacred Heart Secondary School -Nepal
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- project --------------------->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="project-list">
+          <div>
+    <h2>Bhansaghar AR Menu App</h2>
+    <p>
+        Bhansaghar is an innovative Augmented Reality (AR) menu application 
+        designed for restaurants. It allows users to scan a physical menu and 
+        experience a dynamic AR menu, featuring interactive 3D food models. 
+        Each food item is brought to life with its dedicated 3D model and accompanied by unique theme music, enhancing the dining experience. The application was developed using Unity.
+    </p>
+    <a href="https://github.com/Aryamanbista/KUHackFest.git"
+        ><i class="fa-brands fa-github"></i>Github</a
+    >
+</div>
+<div>
+    <h2>EcoBuddy</h2>
+    <p>
+        EcoBuddy is a community waste management web application designed to streamline and enhance waste collection processes. It provides a user-friendly platform for community members to schedule waste pickups, report issues, and view their pickup history. Built on the MERN stack (MongoDB, Express.js, React.js, and Node.js), the system also equips community administrators with tools to manage operations, view analytics, and generate reports, fostering more efficient and sustainable waste management.
+    </p>
+    <a href="https://github.com/Aryamanbista/EcoBuddy.git"
+        ><i class="fa-brands fa-github"></i>Github</a>
+</div>
+<div>
+    <h2>ClassClue</h2>
+    <p>
+        ClassClue is a native Android mobile application built to streamline academic scheduling for university students and administrators. The app provides a centralized platform where students can register for subjects, view events, and receive timely reminders for assignments and exams, with full offline access. A separate admin dashboard allows faculty to manage subjects and events seamlessly. Developed using Java with an MVVM architecture, it integrates Firebase for real-time data synchronization and authentication, and a local Room Database for offline functionality.
+    </p>
+    <a href="https://github.com/Aryamanbista/ClassClue"
+        ><i class="fa-brands fa-github"></i>Github</a
+    >
+</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------- contact --------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>aryamanbista07@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+977-9762873176</p>
+            <div class="social-icons">
+              <a href="https://github.com/Aryamanbista"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/aryamanbista"><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------- footer --------------------->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Aryaman Bista. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
+      }
+      function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
