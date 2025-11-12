@@ -3,12 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Protfilio</title>
+
+    <!-- SEO: CRITICAL - Title Tag -->
+    <title>Aryaman Bista - Software Developer Portfolio | Nepal</title>
+    
+    <!-- SEO: CRITICAL - Meta Description -->
+    <meta name="description" content="Welcome to the portfolio of Aryaman Bista, a passionate software developer and IT student from Kathmandu, Nepal. Explore my projects in AI, web development, and data science."/>
+
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="Aryaman Bista, Bista, Aryaman, arya, developer, software developer, portfolio, Nepal, ryam, aryan, man, bis"/>
+
+    <!-- SEO: Canonical URL - Tells Google this is the original page -->
+    <link rel="canonical" href="https://www.aryamanbista.com.np/" />
+
+    <!-- SEO: Social Media Sharing (Open Graph) -->
+    <meta property="og:title" content="Aryaman Bista - Software Developer Portfolio" />
+    <meta property="og:description" content="Explore the projects and skills of Aryaman Bista, a software developer based in Nepal." />
+    <meta property="og:image" content="https://www.aryamanbista.com.np/images/user.png" />
+    <meta property="og:url" content="https://www.aryamanbista.com.np/" />
+    <meta property="og:type" content="website" />
+
+    <!-- SEO: Social Media Sharing (Twitter Cards) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aryaman Bista - Software Developer Portfolio">
+    <meta name="twitter:description" content="Explore the projects and skills of Aryaman Bista, a software developer based in Nepal.">
+    <meta name="twitter:image" content="https://www.aryamanbista.com.np/images/user.png">
+
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/df908adb86.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- SEO: STRUCTURED DATA (JSON-LD) - A huge boost for telling Google who you are -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aryaman Bista",
+      "url": "https://www.aryamanbista.com.np/",
+      "image": "https://www.aryamanbista.com.np/images/user.png",
+      "sameAs": [
+        "https://github.com/Aryamanbista",
+        "https://www.linkedin.com/in/aryamanbista"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Mid-Valley International College"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "HELP University"
+      },
+      "nationality": "Nepalese",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressCountry": "NP"
+      },
+      "knowsAbout": ["Web Development", "Artificial Intelligence", "Android Development", "Data Science", "Java", "C++", "MERN Stack"]
+    }
+    </script>
   </head>
   <body>
     <div id="header">
@@ -26,6 +82,7 @@
         </nav>
         <div class="header-text">
           <p>Software Developer</p>
+          <!-- SEO: H1 is the most important heading. Adding your full name here is very high-impact. -->
           <h1>
             Hi, I'm <span> Aryaman</span> <br />Bista currently living in Nepal.
           </h1>
@@ -37,10 +94,12 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.png" />
+            
+            <img src="images/user.png" alt="Aryaman Bista, Software Developer from Nepal" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
+            
             <p>
               I'm a passionate and driven Information Technology student based
                in Kathmandu, Nepal, with a deep curiosity for building impactful solutions. 
@@ -58,15 +117,7 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>HTML</span></li>
-                <li><span>CSS</span></li>
-                <li><span>JavaScript</span></li>
-                <li><span>C/C++</span></li>
-                <li><span>Java</span></li>
-                <li><span>Android studio</span></li>
-                <li><span>Aws</span></li>
-                <li><span>AI</span></li>
-                <li><span>Mysql</span></li>
+                <li><span>HTML</span></li><li><span>CSS</span></li><li><span>JavaScript</span></li><li><span>C/C++</span></li><li><span>Java</span></li><li><span>Android studio</span></li><li><span>Aws</span></li><li><span>AI</span></li><li><span>Mysql</span></li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
@@ -98,35 +149,36 @@
       <div class="container">
         <h1 class="sub-title">My Project</h1>
         <div class="project-list">
+          
           <div>
-    <h2>Bhansaghar AR Menu App</h2>
-    <p>
-        Bhansaghar is an innovative Augmented Reality (AR) menu application 
-        designed for restaurants. It allows users to scan a physical menu and 
-        experience a dynamic AR menu, featuring interactive 3D food models. 
-        Each food item is brought to life with its dedicated 3D model and accompanied by unique theme music, enhancing the dining experience. The application was developed using Unity.
-    </p>
-    <a href="https://github.com/Aryamanbista/KUHackFest.git"
-        ><i class="fa-brands fa-github"></i>Github</a
-    >
-</div>
-<div>
-    <h2>EcoBuddy</h2>
-    <p>
-        EcoBuddy is a community waste management web application designed to streamline and enhance waste collection processes. It provides a user-friendly platform for community members to schedule waste pickups, report issues, and view their pickup history. Built on the MERN stack (MongoDB, Express.js, React.js, and Node.js), the system also equips community administrators with tools to manage operations, view analytics, and generate reports, fostering more efficient and sustainable waste management.
-    </p>
-    <a href="https://github.com/Aryamanbista/EcoBuddy.git"
-        ><i class="fa-brands fa-github"></i>Github</a>
-</div>
-<div>
-    <h2>ClassClue</h2>
-    <p>
-        ClassClue is a native Android mobile application built to streamline academic scheduling for university students and administrators. The app provides a centralized platform where students can register for subjects, view events, and receive timely reminders for assignments and exams, with full offline access. A separate admin dashboard allows faculty to manage subjects and events seamlessly. Developed using Java with an MVVM architecture, it integrates Firebase for real-time data synchronization and authentication, and a local Room Database for offline functionality.
-    </p>
-    <a href="https://github.com/Aryamanbista/ClassClue"
-        ><i class="fa-brands fa-github"></i>Github</a
-    >
-</div>
+            <h2>Bhansaghar AR Menu App</h2>
+            <p>
+                Bhansaghar is an innovative Augmented Reality (AR) menu application 
+                designed for restaurants. It allows users to scan a physical menu and 
+                experience a dynamic AR menu, featuring interactive 3D food models. 
+                Each food item is brought to life with its dedicated 3D model and accompanied by unique theme music, enhancing the dining experience. The application was developed using Unity.
+            </p>
+            <a href="https://github.com/Aryamanbista/KUHackFest.git"
+                ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </div>
+          <div>
+            <h2>EcoBuddy</h2>
+            <p>
+                EcoBuddy is a community waste management web application designed to streamline and enhance waste collection processes. It provides a user-friendly platform for community members to schedule waste pickups, report issues, and view their pickup history. Built on the MERN stack (MongoDB, Express.js, React.js, and Node.js), the system also equips community administrators with tools to manage operations, view analytics, and generate reports, fostering more efficient and sustainable waste management.
+            </p>
+            <a href="https://github.com/Aryamanbista/EcoBuddy.git"
+                ><i class="fa-brands fa-github"></i>Github</a>
+          </div>
+          <div>
+            <h2>ClassClue</h2>
+            <p>
+                ClassClue is a native Android mobile application built to streamline academic scheduling for university students and administrators. The app provides a centralized platform where students can register for subjects, view events, and receive timely reminders for assignments and exams, with full offline access. A separate admin dashboard allows faculty to manage subjects and events seamlessly. Developed using Java with an MVVM architecture, it integrates Firebase for real-time data synchronization and authentication, and a local Room Database for offline functionality.
+            </p>
+            <a href="https://github.com/Aryamanbista/ClassClue"
+                ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -137,34 +189,21 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>aryamanbista07@gmail.com
-            </p>
+            <p><i class="fa-solid fa-paper-plane"></i>aryamanbista07@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+977-9762873176</p>
             <div class="social-icons">
-              <a href="https://github.com/Aryamanbista"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/aryamanbista"><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://github.com/Aryamanbista" aria-label="Aryaman Bista on Github"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/aryamanbista" aria-label="Aryaman Bista on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="Aryaman Bista on Facebook"><i class="fa-brands fa-facebook"></i></a>
             </div>
+            <!-- SEO: Renaming the file to include your name is a good practice -->
             <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
             <form action="">
               <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit">Submit</button>
             </form>
           </div>
@@ -175,7 +214,8 @@
     <!-- ------------------- footer --------------------->
     <footer>
       <div class="container">
-        <p>&copy; 2024 Aryaman Bista. All rights reserved.</p>
+        <!-- SEO: Added a slightly modified footer for keyword reinforcement. This is low-impact visually. -->
+        <p>&copy; 2024 Aryaman Bista. All rights reserved. | Software Developer Portfolio</p>
       </div>
     </footer>
 
@@ -193,11 +233,12 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
 
+      var sidemenu = document.getElementById("sidemenu");
       function openmenu() {
-        document.getElementById("sidemenu").style.right = "0";
+        sidemenu.style.right = "0";
       }
       function closemenu() {
-        document.getElementById("sidemenu").style.right = "-200px";
+        sidemenu.style.right = "-200px";
       }
     </script>
   </body>
